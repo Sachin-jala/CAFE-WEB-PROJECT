@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-evenly;
+            background-image: url(/images/background-home.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+
+        .brand-logo {
+            width: 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            margin: 2px;
+            padding: 10px 15px;
+            color: white;
+        }
+
+        .drowpdown-menu {
+            display: none;
+            position: absolute;
+            background: orange;
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+            min-height: 180px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            z-index: 99;
+        }
+
+        .drowpdown-menu li a {
+            color: black;
+            padding: 10px 15px;
+            display: block;
+            text-decoration: none;
+            gap: 20px;
+        }
+
+        .drowpdown-menu li a:hover {
+            background: #f5f5f5;
+            color: orange;
+        }
+
+        .navbar a:hover+.drowpdown-menu,
+        .drowpdown-menu:hover {
+            display: block;
+        }
+
+        .nav-btn {
+            background-color: orange;
+            padding: 10px 20px;
+            color: white;
+            margin-left: 250px;
+        }
+
+        .homepage {
+            height: 90vh;
+            background-image: url(/images/background-home.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+
+        .homepage-div{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+
+        .home-btn {
+            padding: 20px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="brand-logo"> SS CAFE!</div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <ul class="drowpdown-menu">
+                <li><a href="#">Home Slider</a></li>
+                <li><a href="#">Home images</a></li>
+                <li><a href="#">Home Video</a></li>
+            </ul>
+            <a href="#">Pages</a>
+            <ul class="drowpdown-menu">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">About Owner</a></li>
+                <li><a href="#">Gellery</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Featurs</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Our Terms</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">404 Pages</a></li>
+            </ul>
+            <a href="#">Menu</a>
+            <ul class="drowpdown-menu">
+                <li><a href="#">Menu Tabs (WOOCOMMERCE)</a></li>
+                <li><a href="#">Menu List (WOOCOMMERCE)</a></li>
+                <li><a href="#">Menu Tabs</a></li>
+                <li><a href="#">Menu List</a></li>
+            </ul>
+            <a href="#">Reseervation</a>
+            <ul class="drowpdown-menu">
+                <li><a href="#">Reservation (Booking Calender)</a></li>
+                <li><a href="#">Reservation (Contact)</a></li>
+                <li><a href="#">Reservation (Open Table)</a></li>
+                <li><a href="#">Reservation Popup</a></li>
+            </ul>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#">Shop</a>
+
+            <button class="nav-btn">RESERVATION</button>
+        </nav>
+    </header>
+    <section class="homepage">
+        <div class="homepage-div">
+            <p>Welcome to SS CAFE!</p>
+            <h1>VISIT OUR STORE</h1>
+            <button class="home-btn">BOOK A TABLE</button>
+            <button class="home-btn">OPEN MENU</button>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="about-divs">
+            <div className="abooout">
+                <div className="iamge-about"><img src="{cafe-user.webp}" alt="AAbout Us" /></div>
+                <h4>About us</h4>
+                <div className="about-text">
+                    <h1>We Invite You to Visit Our Coffee House</h1>
+                    <p>Repudiandae dignissimos fugiat sit nam. Tempore aspernatur quae repudiandae dolorem, beatae
+                        dolorum, praesentium itaque et quam quaerat.</p>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+            <div class=""></div>
+        </div>
+    </section>
+
+    <section class="working-hour">
+        <div class="one">
+
+            <header>
+                <div>
+                    WORKING HOURS
+                </div>
+            </header>
+            <div>
+                Rolorem, beatae dolorum, praesentium itaque et quam quaerat.
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
